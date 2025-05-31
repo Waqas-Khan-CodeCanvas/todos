@@ -12,30 +12,37 @@
 </head>
 
 <body class="">
-    <header class="">
-        <nav class="navbar navbar-expand-lg bg-dark navbar-dark ">
+     <header>
+        <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
             <div class="container">
                 <a class="navbar-brand fs-4" href="#"><span class="text-info"><i class="bi bi-check2-square"></i>
                         Todo</span>App</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
+                    data-bs-target="#navbarSupportedContent">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#"><i class="bi bi-house-door"></i> Dashboard</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="bi bi-person"></i> Profile</a>
+                        </li>
                     </ul>
                     <div class="d-flex">
-                        <button class="btn btn-outline-info me-2" id="userProfileButton"><i
-                                class="bi bi-person-check"></i> Waqas Khan</button>
-                        <button class="btn btn-outline-danger" id="logoutButton" onclick="logoutUser()">Logout <i
-                                class="bi bi-box-arrow-right "></i></button>
+                        <button class="btn btn-outline-info me-2" id="userProfileButton">
+                            <i class="bi bi-person-check"></i> Leanne Graham
+                        </button>
+                        <button class="btn btn-outline-danger" id="logoutButton" onclick="logoutUser()">
+                            Logout <i class="bi bi-box-arrow-right"></i>
+                        </button>
                     </div>
                 </div>
             </div>
         </nav>
     </header>
+
     <main class="max-vh-100 container-fluid">
         <section class="row h-100 bg-dark ">
             <div class="left-side col-3 bg-light h-100 text-center border border-info">
@@ -50,8 +57,12 @@
                 <div class="border border-info">
                     <div class="bg-light text-dark pt-3">
                         <div class=" d-flex justify-content-between align-items-center">
-                            <input type="text" class="form-control w-50 me-3  my-1 border border-info"
-                                id="searchTodosField" placeholder="Search tasks...">
+                            <div class="input-group mb-3 mt-3 ms-2">
+                                <input type="text" class="form-control" placeholder="Search todos..." id="searchInput"
+                                    aria-label="Recipient’s username" aria-describedby="button-addon2">
+                                <button class="btn btn-primary me-4" type="button"
+                                    id="button-addon2">Search </button>
+                            </div>
                             <div class="w-50 d-flex justify-content-between align-items-center">
                                 <button class="btn btn-success  w-50 " id="addTodoButton"><i
                                         class="bi bi-check2-circle"></i> Completed</button>
@@ -63,7 +74,7 @@
                     </div>
                     <div class="todoInput px-2 d-flex  justify-content-center align-items-center mb-3">
                         <input type="text" class="form-control w-100  mx-auto  border border-info" id="todoInputField"
-                            placeholder="Add a new task...">
+                            placeholder="Add a new todo...">
                         <button class="btn btn-primary w-25 mx-3 " id="addTodoButton">Add Task <i
                                 class="bi bi-arrow-right"></i></button>
                     </div>
