@@ -25,7 +25,9 @@
       border-right: 1px solid #17a2b8;
       padding: 20px;
     }
-
+    li{
+      list-style: none;
+    }
     .todos-section {
       flex-grow: 1;
       overflow-y: auto;
@@ -48,3 +50,4 @@
         height: calc(100vh - 56px - 300px); /* estimated profile section height */
       }
     }
+
