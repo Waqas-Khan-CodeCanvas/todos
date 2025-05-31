@@ -1,0 +1,50 @@
+ html, body {
+      height: 100%;
+      margin: 0;
+      overflow: hidden;
+    }
+
+    .navbar {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1000;
+    }
+
+    .content-wrapper {
+      display: flex;
+      height: calc(100vh - 56px); /* 56px is default navbar height */
+      padding-top: 56px;
+    }
+
+    .profile-section {
+      width: 25%;
+      min-width: 250px;
+      max-width: 300px;
+      background-color: #fff;
+      border-right: 1px solid #17a2b8;
+      padding: 20px;
+    }
+
+    .todos-section {
+      flex-grow: 1;
+      overflow-y: auto;
+      padding: 20px;
+      background-color: #f8f9fa;
+    }
+
+    @media (max-width: 768px) {
+      .content-wrapper {
+        flex-direction: column;
+      }
+
+      .profile-section {
+        width: 100%;
+        border-right: none;
+        border-bottom: 1px solid #17a2b8;
+      }
+
+      .todos-section {
+        height: calc(100vh - 56px - 300px); /* estimated profile section height */
+      }
+    }
