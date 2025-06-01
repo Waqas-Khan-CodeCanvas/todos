@@ -1,4 +1,4 @@
-function showAlert(type = 'danger',message) {
+function showAlert(message,type = 'danger') {
     const alert = document.createElement('div');
     alert.className = `alert alert-${type} alert-dismissible fade show`;
     alert.style.position = 'fixed';
@@ -20,7 +20,7 @@ function showAlert(type = 'danger',message) {
         alert.classList.remove('show');
         alert.classList.add('hide');
         setTimeout(() => alert.remove(), 150);
-    }, 5000);
+    }, 10000);
 }
 
-export default showAlert;
+export {showAlert};

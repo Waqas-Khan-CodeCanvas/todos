@@ -34,6 +34,9 @@
       padding: 20px;
       background-color: #f8f9fa;
     }
+    .circle{
+      cursor: pointer;
+    }
 
     @media (max-width: 768px) {
       .content-wrapper {

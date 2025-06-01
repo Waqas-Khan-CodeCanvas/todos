@@ -10,3 +10,5 @@ async function fetchData(query) {
     return null;
   }
 }
+
+export {fetchData};

@@ -1,14 +1,11 @@
-async function login(event) {
+import { showAlert } from "./showAlert.js";
+import { fetchData } from "./api.js";
+
+window.login = async function(event) {
   event.preventDefault();
 
   const email = event.target.email.value.trim();
   const loadingBtn = document.getElementById("loading");
-  console.log(email);
-
-  if (!email) {
-    showAlert("danger","please enter your email");
-    return;
-  }
 
   // Show loading UI
   loadingBtn.disabled = true;
@@ -22,11 +19,11 @@ async function login(event) {
       localStorage.setItem("currentUser", JSON.stringify(user));
       window.location.href = "index.html";
     } else {
-      alert("No user found with this email.");
+      showAlert("No user found with this email.");
     }
   } catch (error) {
     console.error("Login error:", error);
-    alert("An unexpected error occurred. Please try again.");
+    showAlert(`An error occurred. Please try again. `);
   } finally {
     loadingBtn.disabled = false;
     loadingBtn.textContent = "Login";
@@ -36,7 +33,3 @@ async function login(event) {
 
 
 
-window.logoutUser =  function() {
-  localStorage.removeItem("currentUser");
-  window.location.href = "./login.html";
-}
