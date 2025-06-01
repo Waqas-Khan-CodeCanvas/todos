@@ -10,14 +10,15 @@
 </head>
 
 <body class="bg-light">
-    <section class=" container mx-auto min-vh-100 d-flex flex-column justify-content-center align-items-center ht ">
+    <main class=" container mx-auto min-vh-100 d-flex flex-column justify-content-center align-items-center ht ">
         <form class=" p-5 border border-info rounded-4 bg-white " style="width: 400px;" onsubmit="return login(event)">
             <h3 class="fs-1 text-center text-primary">Login</h3>
             <div class="mb-3">
                 <label for="exampleInputEmail1" class="form-label">Email address</label>
-                <input type="email" class="form-control bg-light" id="exampleInputEmail1" aria-describedby="emailHelp" name="email" >
+                <input type="email" class="form-control bg-light" id="exampleInputEmail1" aria-describedby="emailHelp" name="email" required>
                 <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
             </div>
+            
            
             <div class="mb-3 form-check">
                 <input type="checkbox" class="form-check-input" id="exampleCheck1">
@@ -26,11 +27,11 @@
             <button type="submit" id="loading" class="btn btn-primary w-100">Login</button>
         
         </form>
-    </section>
+    </m>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
         crossorigin="anonymous"></script>
-        <script src="./script.js"></script>
+        <script type="module" src="./main.js"></script>
 </body>
 
 </html>

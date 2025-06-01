@@ -1,3 +1,5 @@
+import showAlert from "./assets/utility/showAlert.js";
+showAlert("danger","please enter your email");
 document.addEventListener("DOMContentLoaded", function () {
   const url = window.location.pathname;
   if ( url.includes("index.html") || url === "/" || url === "") {
@@ -16,9 +18,10 @@ async function login(event) {
 
   const email = event.target.email.value.trim();
   const loadingBtn = document.getElementById("loading");
+  console.log(email);
 
   if (!email) {
-    alert(" Please enter your email.");
+    showAlert("danger","please enter your email");
     return;
   }
 
@@ -53,7 +56,6 @@ async function updateHomePageUI() {
   const todoList = document.getElementById("todoList");
   const completedTodos = document.getElementById("completed");
   const pendingTodos = document.getElementById("pending");
-  console.log(completedTodos ,pendingTodos);
   todos = await fetchData("todos");
   
   let countPending = 0
@@ -97,7 +99,7 @@ async function fetchData(query) {
   }
 }
 
-function logoutUser() {
+window.logoutUser =  function() {
   localStorage.removeItem("currentUser");
   window.location.href = "./login.html";
 }
@@ -134,5 +136,7 @@ inputField.addEventListener('input', function () {
     li.innerHTML = `<h3 class="text-danger text-center my-3">  ▄︻デ══━一 404</h3>`
     todoList.appendChild(li)
   }
+
+
 });
 
