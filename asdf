@@ -1,0 +1,418 @@
+1.
+Question 1
+Which directories are commonly used to store custom service providers for third-party libraries in a Laravel project?
+
+  
+
+app/Providers
+
+
+
+config
+
+
+
+resources/views
+
+
+
+routes
+
+
+1 point
+2.
+Question 2
+Which of the following is an advantage of using Laravel's Eloquent ORM for database interactions?
+
+  
+
+It requires less memory and CPU usage than raw SQL queries.
+
+
+
+It provides a visual interface for designing database tables.
+
+
+
+It allows developers to write raw SQL queries directly in their PHP code.
+
+
+
+It automatically generates database tables and schema.
+
+
+1 point
+3.
+Question 3
+In Laravel, what is the purpose of the csrf field when creating HTML forms?
+
+  
+
+It specifies the character set for form data encoding.
+
+
+
+It includes a hidden field with a cross-site request forgery (CSRF) token.
+
+
+
+It defines the form's submission method (GET or POST).
+
+
+
+It sets the form's action URL.
+
+
+1 point
+4.
+Question 4
+Which of the following best describes the use of PHP functions?
+
+  
+
+PHP functions are primarily used for defining middleware.
+
+
+
+PHP functions are primarily used for defining database migrations.
+
+
+
+PHP functions are used to encapsulate reusable blocks of code and perform specific tasks.
+
+
+
+PHP functions are used for defining API resources.
+
+
+1 point
+5.
+Question 5
+In Laravel, where are CSRF tokens typically included within forms?
+
+  
+
+In the form's action URL.
+
+
+
+In the form's method attribute.
+
+
+
+In the form's CSS stylesheets.
+
+
+
+As hidden input fields within the form.
+
+
+1 point
+6.
+Question 6
+Which of the following Laravel validation rules checks that a user-provided input is a positive integer?
+
+  
+
+integer
+
+
+
+numeric
+
+
+
+positive
+
+
+
+integer and min:1
+
+
+1 point
+7.
+Question 7
+Which of the following is true about PHP comments?
+
+  
+
+PHP comments are used to add explanations or notes within the code but are not executed.
+
+
+
+PHP comments are executed as part of the code.
+
+
+
+PHP comments are used to define routes in a Laravel application.
+
+
+
+PHP comments are used for creating database migrations.
+
+
+1 point
+8.
+Question 8
+Which of the following is an example of role-based authorization in Laravel using middleware?
+
+  
+
+Applying a middleware that checks if the user's name matches a specific role.
+
+
+
+Applying a middleware that validates the user's email address format.
+
+
+
+Applying a middleware that generates PDF reports based on the user's role.
+
+
+
+Applying a middleware that restricts access to a route based on the user's role.
+
+
+1 point
+9.
+Question 9
+What is the purpose of Laravel's VerifyCsrfToken middleware?
+
+  
+
+To verify the authenticity of user login credentials.
+
+
+
+To verify the authenticity of CSRF tokens in incoming requests.
+
+
+
+To validate and sanitize user inputs in form submissions.
+
+
+
+To enforce HTTPS connections for secure communication.
+
+
+1 point
+10.
+Question 10
+In PHP, what is the purpose of the array_push() function?
+
+  
+
+array_push() defines routes in a Laravel application.
+
+
+
+array_push() is used to define middleware.
+
+
+
+array_push() is used for creating database migrations.
+
+
+
+array_push() is used to add elements to the end of an array.
+
+
+1 point
+11.
+Question 11
+In Laravel, what is the purpose of the config method when using a third-party library?
+
+  
+
+It configures the server environment for the library.
+
+
+
+It publishes the configuration files of the library to the config directory.
+
+
+
+It installs the library via Composer.
+
+
+
+It initializes the library's database tables.
+
+
+1 point
+12.
+Question 12
+In Laravel, what is the primary purpose of role-based authentication?
+
+  
+
+To encrypt sensitive user data during transmission.
+
+
+
+To prevent unauthorized access to specific resources or actions based on user roles.
+
+
+
+To validate the format of user input data.
+
+
+
+To generate dynamic HTML forms based on user roles.
+
+
+1 point
+13.
+Question 13
+Which of the following Laravel functions is commonly used to check if a user has a specific role?
+
+  
+
+Auth::user()->hasRole()
+
+
+
+Auth::checkRole()
+
+
+
+Role::hasUser()
+
+
+
+User::hasPermission()
+
+
+1 point
+14.
+Question 14
+Which Laravel Blade directive is used to loop through an array and generate HTML for each item?
+
+  
+
+@each
+
+
+
+@loop
+
+
+
+@for
+
+
+
+@foreach
+
+
+1 point
+15.
+Question 15
+What is the purpose of the @if directive in Laravel Blade templates?
+
+  
+
+It defines a new route in the Laravel application.
+
+
+
+It includes a subview or partial view in the template.
+
+
+
+It allows you to render content based on a condition conditionally.
+
+
+
+It defines a new PHP function.
+
+
+1 point
+16.
+Question 16
+Which Laravel component allows you to manage the dependencies and installation of PHP libraries?
+
+  
+
+Blade Templating Engine
+
+
+
+Composer
+
+
+
+Artisan Console
+
+
+
+Eloquent ORM
+
+
+1 point
+17.
+Question 17
+When integrating a PHP library into a Laravel project, which of the following is NOT a common step?
+
+  
+
+Adding the library's namespace to the autoloader.
+
+
+
+Registering a service provider if the library requires it.
+
+
+
+Configuring the library by adding settings to the .env file.
+
+
+
+Modifying the core Laravel code to accommodate the library.
+
+
+1 point
+18.
+Question 18
+Which of the following validly uses the filter_var function in PHP for input validation and sanitization?
+
+  
+
+$email = filter_var($input, FILTER_VALIDATE_EMAIL);
+
+
+
+$input = filter_var($email, FILTER_SANITIZE_STRING);
+
+
+
+$url = filter_var($input, FILTER_VALIDATE_URL);
+
+
+
+$input = filter_var($username, FILTER_SANITIZE_EMAIL);
+
+
+1 point
+19.
+Question 19
+Which of the following best describes the difference between authentication and authorization in Laravel?
+
+  
+
+Authentication verifies the user's identity, while authorization controls what actions or resources the user can access.
+
+
+
+Authentication and authorization are two terms for the same process and have no difference.
+
+
+
+Authentication deals with user roles, while authorization deals with user passwords.
+
+
+
+Authentication ensures that the user's browser is compatible with the Laravel framework.
+
+
+1 point

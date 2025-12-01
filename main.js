@@ -9,7 +9,7 @@ window.logoutUser =  function() {
   window.location.href = "./login.html";
 }
 
-
+1``
 document.addEventListener("DOMContentLoaded",initApp())
 
 
